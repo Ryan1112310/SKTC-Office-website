@@ -28,7 +28,7 @@ const dictionary: Record<Language, Record<string, string>> = {
     'products.subtitle': 'Select a product for details',
     'products.learn_more': '了解更多',
     'custom.title': '系統客製化方案',
-    'custom.desc': '針對特殊材料 or 老舊產線升級，我們提供完整的數位化改造服務，從設計到安裝一氣糾成。',
+    'custom.desc': '針對特殊材料 or 老舊產線升級，我們提供完整的數位化改造服務，\n從設計到安裝一氣糾成。',
     'custom.item.1': '專人現場實地勘查與動能測試',
     'custom.item.2': '多機連鎖控制系統規劃',
     'custom.hotline': '技術諮詢熱線',

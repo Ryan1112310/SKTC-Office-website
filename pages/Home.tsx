@@ -9,7 +9,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const { language, t } = useLanguage();
-  
+
   // Fetch localized products
   const products = getProducts(language);
 
@@ -126,8 +126,8 @@ const Home: React.FC = () => {
               const IconComponent = (Icons as any)[p.icon
                 .split('-')
                 .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-                .join('')] || Icons.Box; 
-                
+                .join('')] || Icons.Box;
+
               let DisplayIcon = Icons.Box;
               if (p.icon === 'settings-2') DisplayIcon = Icons.Settings2;
               else if (p.icon === 'activity') DisplayIcon = Icons.Activity;
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
 
               return (
                 <Reveal key={key} delay={index * 100}>
-                  <div 
+                  <div
                     onClick={() => navigate(`/product/${key}`)}
                     className="product-card bg-white p-8 border border-slate-100 flex flex-col items-center text-center cursor-pointer hover:shadow-lg transition-all hover:-translate-y-1 hover:border-yellow-400"
                   >
@@ -169,7 +169,7 @@ const Home: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <Reveal>
               <h2 className="text-3xl font-bold mb-8 zen-line">{t('custom.title')}</h2>
-              <p className="text-slate-400 text-lg mb-10 leading-relaxed">
+              <p className="text-slate-400 text-lg mb-10 leading-relaxed whitespace-pre-line">
                 {t('custom.desc')}
               </p>
               <ul className="space-y-4 text-sm">
